@@ -3,6 +3,6 @@ from views import *
 urlpatterns = patterns(
     '',
 
-    url(r'^recipes/$', 'RecipeList.as_view()', name='recipe-list'),
+    url(r'^recipes/$', RecipeList.as_view(), name='recipe-list'),
 
 )

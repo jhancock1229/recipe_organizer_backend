@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-import models
-# from serializers import *
-# Create your views here.
+from models import *
+from serializers import *
 
 
 def test():
@@ -10,7 +9,6 @@ def test():
 
 
 class RecipeList(generics.ListAPIView):
-    model = models.Recipe
-    # serializer_class = RecipeSerializer
-    queryset = models.Recipe.objects.all()
+    serializer_class = RecipeSerializer
+    queryset = Recipe.objects.all()
 

@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=100)),
                 ('description', models.TextField(help_text=b'This is a quick description of your recipe', null=True, blank=True)),
                 ('directions', models.TextField(help_text=b'How to make the recipe')),
-                ('ingredients', models.ManyToManyField(to='recipe_organizer.Ingredient')),
+                ('ingredients', models.ManyToManyField(to='recipes.Ingredient')),
             ],
             options={
             },
