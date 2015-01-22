@@ -20,7 +20,7 @@ class RecipeSerializer(serializers.ModelSerializer):
         for ingredient_data in ingredients_data:
             try:
                 ingredient = Ingredient.objects.get(name=ingredient_data["name"])
-            except Ingredient.DoesNotExist():
+            except Ingredient.DoesNotExist:
                 ingredient = Ingredient.objects.create(**ingredient_data)
             recipe.ingredients.add(ingredient)
         return recipe
