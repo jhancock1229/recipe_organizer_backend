@@ -7,4 +7,5 @@ urlpatterns = patterns(
     url(r'^recipes/(?P<pk>[0-9]+)$', RecipeDetail.as_view(), name='recipe-list'),
     url(r'^ingredients/$', IngredientList.as_view(), name='ingredient-list'),
     url(r'^add-recipe$', AddRecipe.as_view(), name='add-recipe'),
+
 )
