@@ -56,7 +56,9 @@ ROOT_URLCONF = 'recipe_organizer.urls'
 
 WSGI_APPLICATION = 'recipe_organizer.wsgi.application'
 
+MEDIA_ROOT = ''
 
+MEDIA_URL = '/media/'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
