@@ -3,13 +3,11 @@ from models import *
 
 
 class IngredientSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Ingredient
 
 
 class TagSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Tag
 
